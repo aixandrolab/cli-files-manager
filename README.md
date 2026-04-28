@@ -45,6 +45,10 @@
 
 ---
 
+![Main Menu](https://github.com/aixandrolab/cli-files-manager/blob/master/data/images/main_menu.png)
+
+---
+
 ## Installation
 
 ### Dependencies
