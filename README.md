@@ -1,4 +1,4 @@
-# CLI Files Manager <sup>v1.0.0</sup>
+# CLI Files Manager <sup>v1.0.1</sup>
 
 ---
 

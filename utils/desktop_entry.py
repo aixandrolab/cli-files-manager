@@ -17,7 +17,7 @@ class DesktopEntryCreator:
         self.app_executable = sys.executable
         self.app_path = os.path.abspath(sys.argv[0])
         self.icon_path = self.find_icon_path()
-        self.version = "1.0.0"
+        self.version = "1.0.1"
 
     def find_icon_path(self):
         possible_paths = [
