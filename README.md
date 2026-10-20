@@ -1,4 +1,4 @@
-# CLI Files Manager <sup>v1.0.1</sup>
+# CLI Files Manager <sup>v1.0.2</sup>
 
 ---
 
@@ -30,18 +30,18 @@
 
 ## Features
 
-- 📊 **Recursive size analysis** - Scan folders and see detailed size breakdowns
-- 🗑️ **Safe deletion** - Delete files and folders with confirmation prompts
-- 📖 **Text file viewer** - View any text file with paging support
-- 🔍 **Hex/Binary viewer** - Examine raw file contents in hexadecimal format
-- 🔐 **MD5 hash calculator** - Generate and verify file checksums
-- 📂 **Open location** - Open current or selected path in system file explorer
-- 🔎 **Device-wide search** - Find files by pattern with preview and navigation
-- 📁 **Interactive directory navigation** - Change working directory with tab completion
-- 💾 **Detailed file info** - View metadata, timestamps, sizes, and MD5
-- 🖥️ **Desktop integration** - Create .desktop entries for app menu and desktop
-- 🎨 **Color-coded output** - Beautiful terminal UI with intuitive color coding
-- ⚡ **Tab completion** - Auto-complete file and directory paths
+- **Recursive size analysis** - Scan folders and see detailed size breakdowns
+- **Safe deletion** - Delete files and folders with confirmation prompts
+- **Text file viewer** - View any text file with paging support
+- **Hex/Binary viewer** - Examine raw file contents in hexadecimal format
+- **MD5 hash calculator** - Generate and verify file checksums
+- **Open location** - Open current or selected path in system file explorer
+- **Device-wide search** - Find files by pattern with preview and navigation
+- **Interactive directory navigation** - Change working directory with tab completion
+- **Detailed file info** - View metadata, timestamps, sizes, and MD5
+- **Desktop integration** - Create .desktop entries for app menu and desktop
+- **Color-coded output** - Beautiful terminal UI with intuitive color coding
+- **Tab completion** - Auto-complete file and directory paths
 
 ---
 
@@ -96,38 +96,38 @@ sudo dnf install python3 python3-pip
 # Inside the application:
 
 # 1. Analyze folder size
-📊 ANALYZE SIZE → /home/user/Downloads
+ANALYZE SIZE → /home/user/Downloads
 
 # 2. Search for files
-🔎 SEARCH → pattern: *.txt
+SEARCH → pattern: *.txt
 
 # 3. View file in hex
-🔍 VIEW HEX → select any binary file
+VIEW HEX → select any binary file
 
 # 4. Calculate MD5
-🔐 MD5 HASH → select any file
+MD5 HASH → select any file
 
 # 5. Create desktop shortcut
-🖥️ DESKTOP ENTRY → create system integration
+DESKTOP ENTRY → create system integration
 ```
 
 ---
 
 ## Main Menu Options
 
-| Option | Command           | Description                                  |
-|--------|-------------------|----------------------------------------------|
-| 1      | 📊 ANALYZE SIZE   | Analyze file/folder size with progress bar   |
-| 2      | 🗑️ DELETE        | Permanently delete files or folders          |
-| 3      | 📖 VIEW TEXT      | Display text file content with pager         |
-| 4      | 🔍 VIEW HEX       | Show binary/hexadecimal file view            |
-| 5      | 🔐 MD5 HASH       | Calculate MD5 checksum of any file           |
-| 6      | 📂 OPEN LOCATION  | Open path in system file explorer            |
-| 7      | 🔎 SEARCH         | Search entire device for files by pattern    |
-| 8      | 📁 CHANGE DIR     | Change working directory with TAB completion |
-| 9      | 💾 FILE INFO      | Show detailed file metadata                  |
-| 10     | 🖥️ DESKTOP ENTRY | Install app to system menu/desktop           |
-| 0      | 🚪 EXIT           | Exit application                             |
+| Option | Command       | Description                                  |
+|--------|---------------|----------------------------------------------|
+| 1      | ANALYZE SIZE  | Analyze file/folder size with progress bar   |
+| 2      | DELETE        | Permanently delete files or folders          |
+| 3      | VIEW TEXT     | Display text file content with pager         |
+| 4      | VIEW HEX      | Show binary/hexadecimal file view            |
+| 5      | MD5 HASH      | Calculate MD5 checksum of any file           |
+| 6      | OPEN LOCATION | Open path in system file explorer            |
+| 7      | SEARCH        | Search entire device for files by pattern    |
+| 8      | CHANGE DIR    | Change working directory with TAB completion |
+| 9      | FILE INFO     | Show detailed file metadata                  |
+| 10     | DESKTOP ENTRY | Install app to system menu/desktop           |
+| 0      | EXIT          | Exit application                             |
 
 ---
 
@@ -136,18 +136,18 @@ sudo dnf install python3 python3-pip
 ### Analyze Folder Size
 ```bash
 # Select option 1, enter path or press Enter for current directory
-📁 /home/user/Downloads
+/home/user/Downloads
 
 # Output example:
 [████████████████████████████████████████] 1250/1250 files
-📁 TOTAL SIZE: 2.45 GB
+TOTAL SIZE: 2.45 GB
 ```
 
 ### Search Files Device-Wide
 ```bash
 # Select option 7
-🔍 Enter search pattern: *.mp3
-📁 Search root: /home/user/Music
+Enter search pattern: *.mp3
+Search root: /home/user/Music
 
 # Results show all matches with sizes and paths
 # You can select any result to: open location, view, delete, get MD5, or see info
@@ -156,7 +156,7 @@ sudo dnf install python3 python3-pip
 ### Calculate MD5 Hash
 ```bash
 # Select option 5
-📂 Enter file path: /path/to/file.iso
+Enter file path: /path/to/file.iso
 
 # Output:
 MD5 Hash of file.iso:
@@ -166,7 +166,7 @@ a1b2c3d4e5f678901234567890123456
 ### View Binary File in Hex
 ```bash
 # Select option 4
-📂 Enter file path: binary_file.bin
+Enter file path: binary_file.bin
 
 # Output shows hex dump with ASCII representation:
 00000000  89 50 4e 47 0d 0a 1a 0a  00 00 00 0d 49 48 44 52  .PNG........IHDR
@@ -176,13 +176,13 @@ a1b2c3d4e5f678901234567890123456
 ### Create Desktop Integration
 ```bash
 # Select option 10
-👉 Choose option: 3 (Both)
+Choose option: 3 (Both)
 
 # Output:
-✅ SUCCESS
-✓ Application Menu: /home/user/.local/share/applications/ cli-files-manager.desktop
-✓ Desktop: /home/user/Desktop/ cli-files-manager.desktop
-✓ Icon found at: /opt/ cli-files-manager/data/icons/icon.png
+SUCCESS
+Application Menu: /home/user/.local/share/applications/ cli-files-manager.desktop
+Desktop: /home/user/Desktop/ cli-files-manager.desktop
+Icon found at: /opt/ cli-files-manager/data/icons/icon.png
 ```
 
 ---
@@ -193,7 +193,7 @@ a1b2c3d4e5f678901234567890123456
  cli-files-manager/
 ├── app.py                     # Main entry point
 ├── utils/
-│   ├── asciiart.py            # ASCII logo and separators
+│   ├── logo.py                # Logo and separators
 │   ├── colors.py              # Terminal color definitions
 │   ├── completer.py           # Tab completion handler
 │   ├── desktop_entry.py       # .desktop file creator
@@ -224,11 +224,11 @@ a1b2c3d4e5f678901234567890123456
 
 ## Security & Safety Notes
 
-- ⚠️ **Deletion is permanent** — No recycle bin, files are removed immediately
-- ✅ **All operations require confirmation** — Especially destructive actions
-- 🔒 **No data collection** — Works completely offline, no telemetry
-- 📁 **Respects permissions** — Cannot access files without proper OS permissions
-- 🖥️ **Desktop files are safe** — Created in user directories, not system-wide
+- **Deletion is permanent** — No recycle bin, files are removed immediately
+- **All operations require confirmation** — Especially destructive actions
+- **No data collection** — Works completely offline, no telemetry
+- **Respects permissions** — Cannot access files without proper OS permissions
+- **Desktop files are safe** — Created in user directories, not system-wide
 
 ---
 

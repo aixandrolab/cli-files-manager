@@ -19,9 +19,9 @@ from pathlib import Path
 from typing import Union, Optional, List, Tuple
 
 from utils.colors import Colors
-from utils.asciiart import ASCIIArt
 from utils.completer import Completer
 from utils.desktop_entry import DesktopEntryCreator
+from utils.logo import Logo
 
 
 SKIP_DIRS = {
@@ -234,7 +234,7 @@ class FileManager:
             pass
 
     def display_menu(self):
-        print(ASCIIArt.LOGO)
+        print(Logo.header())
         self.show_current_location()
 
         menu_items = [
@@ -514,11 +514,11 @@ class FileManager:
             search_root = Path(search_root)
 
         self.clear_screen()
-        print(ASCIIArt.SEPARATOR)
+        print(Logo.separator())
         print(f"{Colors.BOLD}{Colors.CYAN}SEARCH FILES{Colors.RESET}")
         print(f"{Colors.DIM}Pattern: {pattern}{Colors.RESET}")
         print(f"{Colors.DIM}Root: {search_root}{Colors.RESET}")
-        print(ASCIIArt.SEPARATOR)
+        print(Logo.separator())
 
         matches: List[Path] = []
         skipped = 0
@@ -590,10 +590,10 @@ class FileManager:
                 selected = self.search_results[int(choice) - 1]
                 self.search_file_action_menu(selected)
                 self.clear_screen()
-                print(ASCIIArt.SEPARATOR)
+                print(Logo.separator())
                 print(f"{Colors.BOLD}{Colors.CYAN}SEARCH RESULTS{Colors.RESET}")
                 print(f"{Colors.DIM}Pattern: {self.last_search_pattern}{Colors.RESET}")
-                print(ASCIIArt.SEPARATOR)
+                print(Logo.separator())
                 print(f"\n{Colors.BG_GREEN}{Colors.BOLD} FOUND {len(self.search_results)} FILES {Colors.RESET}\n")
                 for i, file_path in enumerate(self.search_results[:50], 1):
                     try:
@@ -674,7 +674,7 @@ class FileManager:
 
             if choice == '0':
                 self.clear_screen()
-                print(f"\n{Colors.GREEN}{Colors.BOLD}Thank you for using CLI Files Manager v1.0.1!{Colors.RESET}\n")
+                print(f"\n{Colors.GREEN}{Colors.BOLD}Thank you for using CLI Files Manager v1.0.2!{Colors.RESET}\n")
                 print(f"{Colors.DIM}© 2026 Alexander Suvorov. All rights reserved.{Colors.RESET}\n")
                 sys.exit(0)
 

@@ -15,10 +15,10 @@ def main():
         manager = FileManager()
         manager.interactive_menu()
     except KeyboardInterrupt:
-        print(f"\n\n{Colors.YELLOW}⚠️  Interrupted by user{Colors.RESET}\n")
+        print(f"\n\n{Colors.YELLOW}Interrupted by user{Colors.RESET}\n")
         sys.exit(0)
     except Exception as e:
-        print(f"{Colors.RED}❌ Fatal error: {e}{Colors.RESET}")
+        print(f"{Colors.RED}Fatal error: {e}{Colors.RESET}")
         sys.exit(1)
 
 
